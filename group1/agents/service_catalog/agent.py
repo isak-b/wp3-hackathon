@@ -1,11 +1,13 @@
+import asyncio
 import os
 
+import langchain.messages
 from dotenv import load_dotenv
 from langchain.agents import create_agent
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain_openai import ChatOpenAI
 
-load_dotenv()
+load_dotenv(override=True)
 
 client = MultiServerMCPClient({  # type: ignore
     "service_catalog": {
@@ -31,8 +33,23 @@ async def get_agent():
     )
 
 
-if __name__ == "__main__":
+async def main():
     # Example of how to run the agent
     agent = await get_agent()
-    response = agent.invoke({"input": "What services are available in the 'data' category?"})
-    print(response)
+    base_messages = await client.get_prompt("service_catalog", "purpose_prompt")
+    messages = [
+        langchain.messages.SystemMessage("""\
+You are a helpful assistant tasked with retrieving and providing information from
+the Service Catalog. Be friendly and helpful, and provide clear information about
+available services and their requirements.
+"""),
+        * base_messages,
+        langchain.messages.HumanMessage("What services are available in the 'Productivity' category?")
+    ]
+
+    async for event in agent.astream_events({'messages': messages}):
+        print(event)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
