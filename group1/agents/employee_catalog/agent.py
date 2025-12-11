@@ -1,5 +1,8 @@
+import os
+
 import requests
 import yaml
+from dotenv import load_dotenv
 from langchain_community.agent_toolkits.openapi.planner import create_openapi_agent
 from langchain_community.agent_toolkits.openapi.spec import ReducedOpenAPISpec
 from langchain_community.utilities.requests import TextRequestsWrapper
@@ -10,8 +13,14 @@ response = requests.get("http://localhost:8002/openapi.json")
 spec_dict = yaml.safe_load(response.text)
 spec = ReducedOpenAPISpec.from_dict(spec_dict)
 
+load_dotenv()
+
 # Create the agent
-llm = ChatOpenAI(model="gpt-3.5-turbo")
+llm = ChatOpenAI(
+    model="gpt-4o-mini",
+    base_url=os.environ["OPENAI_BASE_URL"],
+    api_key=lambda: os.environ["OPENAI_API_KEY"]
+)
 requests_wrapper = TextRequestsWrapper()
 agent = create_openapi_agent(
     spec,
