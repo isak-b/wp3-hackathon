@@ -1,9 +1,10 @@
 [project]
-name = "wp3-hackathon"
+name = "group1"
 version = "0.1.0"
-description = "Agent examples "
+description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
+
 dependencies = [
     "faiss-cpu>=1.10.0",
     "fastmcp>=2.13.1",
@@ -20,10 +21,22 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "autopep8>=2.3.2",
+    "flake8>=7.3.0",
+    "isort>=7.0.0",
     "jupyter>=1.1.1",
+    "pyright>=1.1.407",
 ]
 
-[tool.uv.workspace]
-members = [
-    "group1",
-]
+[tool.autopep8]
+max_line_length = 88
+ignore = "E203"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+norecursedirs = "tests/_helpers"
+testpaths = "src tests"
+env = ["IS_TEST=true", "KEY_VAULT_NAME=testvault"]
+
+[tool.pyright]
+typeCheckingMode = "basic"
