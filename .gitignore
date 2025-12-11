@@ -208,3 +208,6 @@ __marimo__/
 
 # Mac
 .DS_Store
+
+# GitHub workflows and templates
+.github/
