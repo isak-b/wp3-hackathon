@@ -32,7 +32,8 @@ class ResponseFormat(BaseModel):
 
 
 class EmployeeCatalogAgent:
-    """CurrencyAgent - a specialized assistant for currency convesions."""
+    """EmployeeCatalogAgent - a specialized assistant to interact with the employee
+    catalog."""
 
     SYSTEM_INSTRUCTION = (
         'Du är en hjälpsam assistent som har som uppgift att hämta och spara uppgifter '

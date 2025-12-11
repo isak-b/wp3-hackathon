@@ -33,7 +33,7 @@ class MissingAPIKeyError(Exception):
 @click.option('--host', 'host', default='localhost')
 @click.option('--port', 'port', default=10000)
 def main(host, port):
-    """Starts the Currency Agent server."""
+    """Starts the Employee Catalog Agent server."""
     try:
         if not os.getenv('OPENAI_BASE_URL'):
             raise MissingURLError(
@@ -45,22 +45,29 @@ def main(host, port):
             )
 
         capabilities = AgentCapabilities(streaming=True, push_notifications=True)
-        skill = AgentSkill(
-            id='convert_currency',
-            name='Currency Exchange Rates Tool',
-            description='Helps with exchange values between various currencies',
-            tags=['currency conversion', 'currency exchange'],
-            examples=['What is exchange rate between USD and GBP?'],
-        )
+        skills = [
+            AgentSkill(
+                id='get_employee_info',
+                name='Get Employee Information Tool',
+                description='Helps with retrieving information about current employees',
+                tags=['employee information'],
+                examples=[
+                    'What is the name of the employee with id 3?',
+                    'How many employees do we have?',
+                    'What is the id of Jane Doe?'
+                ],
+            ),
+        ]
         agent_card = AgentCard(
-            name='Currency Agent',
-            description='Helps with exchange rates for currencies',
+            name='Employee Catalog Agent',
+            description=(
+                'Helps with queries and updated to the employee catalog service'),
             url=f'http://{host}:{port}/',
             version='1.0.0',
             default_input_modes=EmployeeCatalogAgent.SUPPORTED_CONTENT_TYPES,
             default_output_modes=EmployeeCatalogAgent.SUPPORTED_CONTENT_TYPES,
             capabilities=capabilities,
-            skills=[skill],
+            skills=skills,
         )
 
         # --8<-- [start:DefaultRequestHandler]
