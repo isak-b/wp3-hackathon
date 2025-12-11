@@ -32,7 +32,8 @@ class ResponseFormat(BaseModel):
 
 
 class EmployeeCatalogAgent:
-    """CurrencyAgent - a specialized assistant for currency convesions."""
+    """EmployeeCatalogAgent - a specialized assistant to interact with the employee
+    catalog."""
 
     SYSTEM_INSTRUCTION = (
         'Du är en hjälpsam assistent som har som uppgift att hämta och spara uppgifter '
@@ -68,7 +69,7 @@ class EmployeeCatalogAgent:
         inputs = {'messages': [('user', query)]}
         config = {'configurable': {'thread_id': context_id}}
 
-        for item in self.graph.stream(
+        async for item in self.graph.astream(
                 input=inputs, config=config, stream_mode='values'):  # type: ignore
             message = item['messages'][-1]
             if (
