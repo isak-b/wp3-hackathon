@@ -1,0 +1,36 @@
+personal_id,namn,roll,avdelning,datum,vecka,dag,tid_start,tid_slut,aktivitet,typ,instruktör,anteckningar
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-06,1,Mån,07:00,15:00,Patientövervakning,Arbetspass,Anders Bergström,Under handledning
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-07,1,Tis,09:00,13:00,Fri arbetstid,Fri arbetstid,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-08,1,Ons,07:00,15:00,Patientövervakning,Arbetspass,Karin Olsson,Under handledning
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-09,1,Tor,09:00,13:00,Fri arbetstid,Fri arbetstid,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-10,1,Fre,07:00,15:00,Patientövervakning,Arbetspass,Karin Olsson,Under handledning
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-11,1,Lör,Ledig,Ledigt,Ledigt,,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-12,1,Sön,Ledig,Ledigt,Ledigt,,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-13,2,Mån,07:00,15:00,Patientövervakning,Arbetspass,Anders Bergström,Under handledning
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-14,2,Tis,09:00,13:00,Fri arbetstid,Fri arbetstid,Anders Bergström,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-15,2,Ons,14:00,22:00,Patientövervakning,Arbetspass,Karin Olsson,Under handledning
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-16,2,Tor,09:00,13:00,Fri arbetstid,Fri arbetstid,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-17,2,Fre,07:00,15:00,Patientövervakning,Arbetspass,Anders Bergström,Under handledning
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-18,2,Lör,Ledig,Ledigt,Ledigt,,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-19,2,Sön,Ledig,Ledigt,Ledigt,,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-20,3,Mån,07:00,15:00,Patientövervakning,Arbetspass,Anders Bergström,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-21,3,Tis,09:00,13:00,Fri arbetstid,Fri arbetstid,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-22,3,Ons,14:00,22:00,Patientövervakning,Arbetspass,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-23,3,Tor,09:00,13:00,Fri arbetstid,Fri arbetstid,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-24,3,Fre,09:00,12:00,Fri arbetstid,Fri arbetstid,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-25,3,Lör,Ledig,Ledigt,Ledigt,,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-26,3,Sön,Ledig,Ledigt,Ledigt,,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-27,4,Mån,07:00,15:00,Patientövervakning,Arbetspass,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-28,4,Tis,09:00,13:00,Fri arbetstid,Fri arbetstid,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-29,4,Ons,09:00,13:00,Fri arbetstid,Fri arbetstid,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-30,4,Tor,14:00,22:00,Patientövervakning,Arbetspass,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-01-31,4,Fre,09:00,13:00,Fri arbetstid,Fri arbetstid,Anders Bergström,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-02-01,4,Lör,Ledig,Ledigt,Ledigt,,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-02-02,4,Sön,Ledig,Ledigt,Ledigt,,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-02-03,5,Mån,07:00,15:00,Patientövervakning,Arbetspass,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-02-04,5,Tis,09:00,13:00,Fri arbetstid,Fri arbetstid,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-02-05,5,Ons,14:00,22:00,Patientövervakning,Arbetspass,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-02-06,5,Tor,09:00,13:00,Fri arbetstid,Fri arbetstid,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-02-07,5,Fre,10:00,14:00,Fri arbetstid,Fri arbetstid,Pausa,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-02-08,5,Lör,Ledig,Ledigt,Ledigt,,
+P001,Emma Andersson,Sjuksköterska,Medicin,2025-02-09,5,Sön,Ledig,Ledigt,Ledigt,,
