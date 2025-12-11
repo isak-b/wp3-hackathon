@@ -68,7 +68,7 @@ class ServiceCatalogAgent:
         inputs = {'messages': [('user', query)]}
         config = {'configurable': {'thread_id': context_id}}
 
-        for item in self.graph.stream(
+        async for item in self.graph.astream(
                 input=inputs, config=config, stream_mode='values'):  # type: ignore
             message = item['messages'][-1]
             if (
