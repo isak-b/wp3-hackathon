@@ -1,4 +1,4 @@
-from mcp.mock_data import employees
+from .mock_data import employees
 
 
 def get_all_employees():

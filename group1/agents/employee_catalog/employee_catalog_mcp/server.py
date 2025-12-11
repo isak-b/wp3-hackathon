@@ -1,5 +1,6 @@
 from fastmcp import FastMCP
-from mcp.tools import tools
+
+from .tools import tools
 
 app = FastMCP(
     name="Employee Catalog MCP",
