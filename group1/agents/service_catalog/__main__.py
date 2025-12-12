@@ -111,4 +111,3 @@ def main(host, port):
 
 if __name__ == '__main__':
     main()
-    main()

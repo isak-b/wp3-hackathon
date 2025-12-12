@@ -7,7 +7,7 @@ from a2a.types import (InternalError, InvalidParamsError, Part, TaskState, TextP
                        UnsupportedOperationError)
 from a2a.utils import new_agent_text_message, new_task
 from a2a.utils.errors import ServerError
-from employee_catalog.agent import EmployeeCatalogAgent
+from .agent import EmployeeCatalogAgent
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
