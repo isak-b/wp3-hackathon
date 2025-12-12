@@ -1,0 +1,68 @@
+schema_id,kurs_id,datum,starttid,sluttid,plats,instruktör,max_deltagare
+1,1,2025-01-06,09:00,11:00,Sal A,Anna Svensson,20
+2,1,2025-01-13,14:00,16:00,Sal B,Anna Svensson,20
+3,2,2025-01-06,13:00,16:00,Sal C,Per Andersson,25
+4,2,2025-01-13,09:00,12:00,Sal A,Per Andersson,25
+5,3,2025-01-06,10:00,14:00,Laboratorie 1,Maria Johansson,15
+6,3,2025-01-13,10:00,14:00,Laboratorie 1,Maria Johansson,15
+7,3,2025-01-20,10:00,14:00,Laboratorie 2,Maria Johansson,15
+8,4,2025-01-13,09:00,14:00,IT-rum 1,Erik Lundström,12
+9,4,2025-01-20,09:00,14:00,IT-rum 2,Erik Lundström,12
+10,4,2025-01-27,09:00,14:00,IT-rum 1,Erik Lundström,12
+11,5,2025-01-13,10:00,16:00,Sal D,Ingrid Berg,18
+12,5,2025-01-20,10:00,16:00,Sal A,Ingrid Berg,18
+13,5,2025-01-27,10:00,16:00,Sal B,Ingrid Berg,18
+14,6,2025-01-20,08:00,12:00,Klinisk enhet 1,Karin Olsson,10
+15,6,2025-02-03,08:00,12:00,Klinisk enhet 2,Karin Olsson,10
+16,7,2025-01-20,14:00,17:00,Praktiksal,Lars Bergman,8
+17,7,2025-01-27,14:00,17:00,Praktiksal,Lars Bergman,8
+18,8,2025-02-03,10:00,14:00,Sal E,Sofia Nilsson,20
+19,8,2025-02-10,10:00,14:00,Sal C,Sofia Nilsson,20
+20,8,2025-02-17,10:00,14:00,Sal A,Sofia Nilsson,20
+21,9,2025-02-10,13:00,16:00,Sal F,Thomas Ström,18
+22,9,2025-02-17,13:00,16:00,Sal B,Thomas Ström,18
+23,9,2025-02-24,13:00,16:00,Sal D,Thomas Ström,18
+24,10,2025-02-17,09:00,13:00,Sal G,Berit Ekström,15
+25,10,2025-02-24,09:00,13:00,Sal E,Berit Ekström,15
+26,10,2025-03-03,09:00,13:00,Sal A,Berit Ekström,15
+27,11,2025-02-24,10:00,13:00,Sal H,Gunnar Lind,16
+28,11,2025-03-03,10:00,13:00,Sal C,Gunnar Lind,16
+29,11,2025-03-10,10:00,13:00,Sal F,Gunnar Lind,16
+30,12,2025-02-03,09:00,14:00,Simulering Center,Mats Järvinen,12
+31,12,2025-02-10,09:00,14:00,Simulering Center,Mats Järvinen,12
+32,12,2025-02-17,09:00,14:00,Simulering Center,Mats Järvinen,12
+33,12,2025-02-24,09:00,14:00,Simulering Center,Mats Järvinen,12
+34,13,2025-01-13,14:00,17:00,Sal I,Rolf Dahlström,22
+35,13,2025-01-20,14:00,17:00,Sal A,Rolf Dahlström,22
+36,14,2025-02-03,10:00,12:00,Sal J,Annika Ström,20
+37,14,2025-02-10,10:00,12:00,Sal B,Annika Ström,20
+38,15,2025-01-27,09:00,13:00,Sal K,Linnéa Svensson,18
+39,15,2025-02-03,09:00,13:00,Sal C,Linnéa Svensson,18
+40,15,2025-02-10,09:00,13:00,Sal E,Linnéa Svensson,18
+41,16,2025-01-06,13:00,16:00,Laboratorie 1,Mikael Ström,12
+42,16,2025-01-13,13:00,16:00,Laboratorie 2,Mikael Ström,12
+43,16,2025-01-20,13:00,16:00,Laboratorie 1,Mikael Ström,12
+44,17,2025-01-13,09:00,11:00,Radiologi,Kristina Berg,14
+45,17,2025-01-20,09:00,11:00,Radiologi,Kristina Berg,14
+46,18,2025-01-06,10:00,13:00,Sterilisering,Birgitta Holm,16
+47,18,2025-01-13,10:00,13:00,Sterilisering,Birgitta Holm,16
+48,18,2025-01-20,10:00,13:00,Sterilisering,Birgitta Holm,16
+49,19,2025-01-13,08:00,11:00,Mottagning,Elsa Andersson,20
+50,19,2025-01-20,08:00,11:00,Mottagning,Elsa Andersson,20
+51,19,2025-01-27,08:00,11:00,Mottagning,Elsa Andersson,20
+52,20,2025-02-10,14:00,16:00,Sal L,David Ström,18
+53,20,2025-02-17,14:00,16:00,Sal A,David Ström,18
+54,21,2025-01-06,09:00,11:00,IT-rum 1,Eva Lundqvist,25
+55,21,2025-01-13,09:00,11:00,IT-rum 2,Eva Lundqvist,25
+56,22,2025-01-13,10:00,14:00,IT-rum 1,Lennart Svensson,20
+57,22,2025-01-20,10:00,14:00,IT-rum 2,Lennart Svensson,20
+58,22,2025-01-27,10:00,14:00,IT-rum 1,Lennart Svensson,20
+59,23,2025-01-06,13:00,15:00,Sal M,Rita Norström,22
+60,23,2025-01-13,13:00,15:00,Sal B,Rita Norström,22
+61,24,2025-01-20,09:00,11:00,Sal N,Sven Höglund,24
+62,24,2025-01-27,09:00,11:00,Sal A,Sven Höglund,24
+63,25,2025-01-13,09:00,12:00,Klinisk enhet 1,Helene Bergström,10
+64,25,2025-01-20,09:00,12:00,Klinisk enhet 2,Helene Bergström,10
+65,25,2025-01-27,09:00,12:00,Klinisk enhet 1,Helene Bergström,10
+66,26,2025-01-06,10:00,13:00,Sal O,Göran Eklund,16
+67,26,2025-01-13,10:00,13:00,Sal C,Göran Eklund,16
