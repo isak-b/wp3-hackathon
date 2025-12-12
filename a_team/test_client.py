@@ -143,6 +143,7 @@ async def main() -> None:
 
 
 if __name__ == '__main__':
+    # NOTE: Doesn't currently work very well (the agent does its job, but the client times out)
     import asyncio
 
     asyncio.run(main())
