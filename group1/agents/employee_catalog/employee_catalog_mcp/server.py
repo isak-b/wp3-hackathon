@@ -16,7 +16,7 @@ def get_all_employees():
 
 
 @app.tool
-def get_employee_by_id(employee_id: int):
+def get_employee_by_id(employee_id: str):
     """Returns the employee with the given ID."""
     for employee in employees:
         if employee["id"] == employee_id:
@@ -36,4 +36,5 @@ def get_employee_by_name(name: str):
 @app.prompt
 def base_prompt():
     return PromptMessage(
-        role="assistant", content=TextContent(type="text", text=BASE_INSTRUCTIONS))
+        role="assistant",
+        content=TextContent(type="text", text=BASE_INSTRUCTIONS))

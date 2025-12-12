@@ -1,21 +1,21 @@
 # Mock employee data
 employees = [
     {
-        "id": 1,
-        "name": "John Doe",
-        "position": "Software Engineer",
-        "email": "john.doe@example.com",
+        "id": "P001",
+        "name": "Emma Andersson",
+        "position": "Sjuksköterska",
+        "email": "emma.w.andersson@sjukhus.se",
     },
     {
-        "id": 2,
-        "name": "Jane Smith",
-        "position": "Project Manager",
-        "email": "jane.smith@example.com",
+        "id": "P002",
+        "name": "Sofia Björkman",
+        "position": "Sjuksköterska",
+        "email": "sofia.bjorkman@sjukhus.se",
     },
     {
-        "id": 3,
-        "name": "Peter Jones",
-        "position": "Data Scientist",
-        "email": "peter.jones@example.com",
+        "id": "P003",
+        "name": "Camilla Öster",
+        "position": "Vårdenhetschef",
+        "email": "camilla.a.oster@sjukhus.se",
     },
 ]
