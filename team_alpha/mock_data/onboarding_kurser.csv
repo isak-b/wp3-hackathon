@@ -1,0 +1,27 @@
+kurs_id,kurs_namn,kategori,personal_typ,varaktighet_timmar,beskrivning,obligatorisk
+1,Grundläggande patientöversättning,Kommunikation,Sjuksköterska,2,Lär dig hur du kommunicerar effektivt med patienter från olika bakgrunder,Ja
+2,Arbetsmiljö och säkerhet,Säkerhet,Sjuksköterska,3,Introduktion till arbetsmiljölagstiftning och säkerhetsprotokoll på sjukhuset,Ja
+3,Infektionskontroll och hygien,Hygien,Sjuksköterska,4,Fördjupning i sterila teknik och infektionskontrollåtgärder,Ja
+4,Electronic Health Records (EHR),IT-system,Sjuksköterska,5,Utbildning i sjukhusets journalsystem,Ja
+5,Medicering och farmakologi,Medicin,Sjuksköterska,6,Grundkurs i läkemedelshantering och farmakologiska principer,Ja
+6,Patientövervakning och vitala tecken,Klinisk praktik,Sjuksköterska,4,Hur man mäter och tolkar blodtryck puls andning och temperatur,Ja
+7,Venösa kanylering,Praktisk färdighet,Sjuksköterska,3,Praktisk övning i intravenös kanylering,Ja
+8,Palliativ vård,Specialisering,Sjuksköterska,4,Introduktion till palliativ vård och smärtbehandling,Nej
+9,Mentalhälsa och psykisk ohälsa,Specialisering,Sjuksköterska,3,Hantering av patienter med psykiska sjukdomar,Nej
+10,Äldrevård och demens,Specialisering,Sjuksköterska,4,Särskild omsorg för äldre patienter och demenssjuka,Nej
+11,Barnsjukvård,Specialisering,Sjuksköterska,3,Introduktion till barns unika behov och sjukvård,Nej
+12,Traumavård och akutsituationer,Praktisk färdighet,Sjuksköterska,5,Träning i akutsituationer och traumavård,Ja
+13,Professionell etik och regler,Juridik,Sjuksköterska,3,Överblick av sjuksköterskedirektivet och etiska riktlinjer,Ja
+14,Kommunikation med anhöriga,Kommunikation,Sjuksköterska,2,Empati och kommunikation med familjer och närstående,Nej
+15,Omvårdnadsprocessen,Klinisk praktik,Sjuksköterska,4,Introduktion till omvårdnadsprocessens fem steg,Ja
+16,Grundläggande laboratorieanalys,Laboratorium,Sjuksköterskvärd,3,Introduktion till vanliga laboratorieprov och provtagning,Ja
+17,Radiologi och bilddiagnostik,Teknik,Sjukvårdsassistent,2,Grundkurs i röntgen och säkerhet vid bilddiagnostik,Ja
+18,Sterilisering och desinfektionsprotokoll,Hygien,Sjukvårdsassistent,3,Sterilisering av instrument och medicinsk utrustning,Ja
+19,Mottagning och triage,Administrativ,Sjukvårdsassistent,3,Hantering av patientmottagning och prioritering av patienter,Ja
+20,Psykiatrivård för medarbetare,Specialisering,Sjukvårdsassistent,2,Stöd och omvårdnad av psykiatriska patienter,Nej
+21,Medicinsk terminologi,Kunskap,Receptionist,2,Lär dig medicinsk terminologi och föreskrivningar,Ja
+22,Patientöversättning och administrativa system,IT-system,Receptionist,4,Träning i klinikens bokningssystem och administrativ hantering,Ja
+23,Telefon- och mottagningsetik,Kommunikation,Receptionist,2,Professionell kommunikation vid telefon och mottagning,Ja
+24,Dataskydd och GDPR,Juridik,Receptionist,2,Introduktion till patientintegritet och GDPR-regler,Ja
+25,Läkarassistans och klinisk support,Praktisk färdighet,Läkarsekreterare,3,Assistans till läkare under kliniska undersökningar,Ja
+26,Dokumentation och journalföring,Administrativ,Läkarsekreterare,3,Medicinsk dokumentation och patientjournaler,Ja
