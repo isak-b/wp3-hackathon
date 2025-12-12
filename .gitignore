@@ -209,5 +209,7 @@ __marimo__/
 # Mac
 .DS_Store
 
+# GitHub workflows and templates
+.github/
 # A Team stuff
 a_team/schedule/updated_calendars/
