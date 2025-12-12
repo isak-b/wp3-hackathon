@@ -2,7 +2,7 @@ from langchain.tools import tool
 from pydantic import BaseModel, Field
 from datetime import datetime
 from pathlib import Path
-
+import json
 from ics import Calendar
 from colorama import Fore, Style
 import pandas as pd
@@ -34,16 +34,18 @@ class CreateEventArgsSchema(BaseModel):
 
 
 @tool()
-def get_persons():
+def get_persons() -> str:
     """Use this to get all employees, including their name and roles as well as id."""
     print(Fore.RED + "get_persons called" + Style.RESET_ALL)
-    return pd.read_csv(
-        f"{current_file.parent}/data/employees.csv", sep=";", index_col=[0]
+    return str(
+        pd.read_csv(
+            f"{current_file.parent}/data/employees.csv", sep=";", index_col=[0]
+        )
     )
 
 
 @tool()
-def get_calendars(ids: list):
+def get_calendars(ids: list) -> str:
     """Use this to get the calendar for each employee by their id."""
     print(Fore.RED + "get_calendars called" + Style.RESET_ALL)
     calendars = {}
@@ -55,11 +57,11 @@ def get_calendars(ids: list):
         ) as f:
             cal = Calendar.parse_multiple(f.read())
             calendars[employee_id] = [str(event) for event in cal]
-    return calendars
+    return json.dumps(calendars)
 
 
 @tool(args_schema=CreateEventArgsSchema)
-def create_calendar_event(employee_ids: list, *args, **kwargs):
+def create_calendar_event(employee_ids: list, *args, **kwargs) -> str:
     """Use this to create a calendar event."""
     print(Fore.RED + "create_calendar_event called" + Style.RESET_ALL)
     event = schedule.create.ics_event(*args, **kwargs)
